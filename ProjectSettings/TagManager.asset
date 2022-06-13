@@ -41,3 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Player
+    uniqueID: 99147751
+    locked: 0
+  - name: Player Joints
+    uniqueID: 3581552551
+    locked: 0
