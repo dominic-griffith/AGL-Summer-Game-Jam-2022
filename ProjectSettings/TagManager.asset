@@ -13,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Body Parts
   - 
   - 
   - 
@@ -41,9 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Player
+  - name: Background
     uniqueID: 99147751
     locked: 0
-  - name: Player Joints
+  - name: Torso
     uniqueID: 3581552551
+    locked: 0
+  - name: Head
+    uniqueID: 2793687029
+    locked: 0
+  - name: Arms and Legs
+    uniqueID: 2352927217
+    locked: 0
+  - name: Hands and Feet
+    uniqueID: 4046418829
     locked: 0
