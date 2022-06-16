@@ -42,15 +42,15 @@ public class DragObject : MonoBehaviour
         orgMat = gameObject.GetComponent<SpriteRenderer>().material;
     }
 
-    //private void OnMouseEnter()
-    //{
-    //    gameObject.GetComponent<SpriteRenderer>().material = glowMat;
-    //}
+    private void OnMouseEnter()
+    {
+        gameObject.GetComponent<SpriteRenderer>().material = glowMat;
+    }
 
-    //private void OnMouseExit()
-    //{
-    //    gameObject.GetComponent<SpriteRenderer>().material = orgMat;
-    //}
+    private void OnMouseExit()
+    {
+        gameObject.GetComponent<SpriteRenderer>().material = orgMat;
+    }
 
     private void OnMouseDrag()
     {
