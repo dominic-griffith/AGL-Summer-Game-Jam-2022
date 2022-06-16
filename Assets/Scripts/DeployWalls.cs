@@ -7,8 +7,11 @@ public class DeployWalls : MonoBehaviour
 
     public int numParts = 4;
 
-    public List<GameObject> wallPrefab; // prefabs allow us to make clones of the original without destorying the original (since the og is not in the game) (factory method?)
+    public GameObject wallHolder;
+    // square hole walls (trash)
+    public List<Sprite> wallPrefabs; // prefabs allow us to make clones of the original without destorying the original (since the og is not in the game) (factory method?)
     
+    public GameObject progressBar;
 
    private float secondsCount = 0;
 
@@ -32,6 +35,15 @@ public class DeployWalls : MonoBehaviour
     IEnumerator SpawnWall() {
         while(true) {
 
+
+    
+            float spd = 0f;
+            int wallIndex = Random.Range(0, 7);
+            GameObject wh = Instantiate(wallHolder) as GameObject;
+
+
+
+            /*
             GameObject wall = new GameObject();
             float spd = 0f;
 
@@ -135,8 +147,6 @@ public class DeployWalls : MonoBehaviour
 
                 }
 
-
-
                 wallLeft.transform.parent = wall.transform;
                 wallRight.transform.parent = wall.transform;
                 wallUp.transform.parent = wall.transform;
@@ -162,7 +172,24 @@ public class DeployWalls : MonoBehaviour
                 wallDown.transform.parent = wall.transform;
 
 
-                spd = wm1.GetSpeed();
+                */
+
+                SpriteRenderer r = wh.GetComponent<SpriteRenderer>();
+                r.sprite = wallPrefabs[wallIndex];
+
+                WallMovement wm = wh.GetComponent(typeof(WallMovement)) as WallMovement;
+                wm.SetDifficulty(secondsCount);
+
+
+                spd = wm.GetSpeed();
+
+                ProgressBar pb = progressBar.GetComponent(typeof(ProgressBar)) as ProgressBar;
+
+                
+
+
+
+                pb.StartProgress(spd / 12f);
 
         
 
@@ -193,8 +220,10 @@ public class DeployWalls : MonoBehaviour
 
         yield return new WaitForSeconds(12f / spd);
 
-        if (wall != null) {
-            Destroy(wall);
+        if (wh != null) {
+            Destroy(wh);
+            pb.reset();
+
         }
     }
 

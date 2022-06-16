@@ -20,8 +20,8 @@ public class WallMovement : MonoBehaviour // the instantiation of a wall
         transform.Translate(0, 0, -speed * Time.deltaTime);
     }
 
-    void OnCollisionEnter(Collision col) {
-        if (col.gameObject.name == "Person") {
+    void OnTriggerEnter2D(Collider2D col) {
+        if (col.gameObject.name == "Player") {
 
             Debug.Log("poop");
             SceneManager.LoadScene(Global.SCENES.GAMEOVER.ToString());

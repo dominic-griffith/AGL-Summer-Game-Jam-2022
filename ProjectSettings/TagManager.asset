@@ -56,3 +56,6 @@ TagManager:
   - name: Hands and Feet
     uniqueID: 4046418829
     locked: 0
+  - name: Progress Bar
+    uniqueID: 290517015
+    locked: 0
