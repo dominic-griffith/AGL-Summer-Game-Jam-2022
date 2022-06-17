@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DeployWalls : MonoBehaviour
 {
@@ -8,12 +9,23 @@ public class DeployWalls : MonoBehaviour
     public int numParts = 4;
 
     public GameObject wallHolder;
+
+    public Sprite wall;
     // square hole walls (trash)
     public List<Sprite> wallPrefabs; // prefabs allow us to make clones of the original without destorying the original (since the og is not in the game) (factory method?)
     
     public GameObject progressBar;
 
    private float secondsCount = 0;
+
+   
+
+    public void GoToLevel(int lvl) {
+        SceneManager.LoadScene(Global.SCENES.PLAY.ToString());
+        DeployWalls dw = Camera.main.GetComponent(typeof(DeployWalls)) as DeployWalls;
+        dw.SetWallIndex(lvl);
+    }
+
 
 
     // Start is called before the first frame update
@@ -30,6 +42,10 @@ public class DeployWalls : MonoBehaviour
     {
         secondsCount += Time.deltaTime;
         
+    }
+
+    public void SetWallIndex(int i) {
+        wall = wallPrefabs[i - 1];
     }
 
     IEnumerator SpawnWall() {
@@ -175,7 +191,7 @@ public class DeployWalls : MonoBehaviour
                 */
 
                 SpriteRenderer r = wh.GetComponent<SpriteRenderer>();
-                r.sprite = wallPrefabs[wallIndex];
+                r.sprite = wall;
 
                 WallMovement wm = wh.GetComponent(typeof(WallMovement)) as WallMovement;
                 wm.SetDifficulty(secondsCount);
