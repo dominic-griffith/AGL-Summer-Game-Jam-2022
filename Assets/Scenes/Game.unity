@@ -450,12 +450,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numParts: 4
-  coolWall: {fileID: 8570288254350243276, guid: cd813649583a6fe448e770814df67e9f, type: 3}
-  wallPrefab:
-  - {fileID: 3189469125550796576, guid: a97cb97e839316043b47d9775a19957e, type: 3}
-  - {fileID: 6078353986287293139, guid: 329fad6abda34b54786fd64cfffaeded, type: 3}
-  - {fileID: 1856533342403556243, guid: d8ea7fbeec2df924d9f678731bc62e8a, type: 3}
-  - {fileID: 4578755015088074527, guid: 1aa1417a032bb7641813d97bea93ce8c, type: 3}
+  wallHolder: {fileID: 7789213632708740475, guid: 406fba2d826d27a4692a6f455b3fff5b, type: 3}
+  wallPrefabs:
+  - {fileID: 21300000, guid: 24862a76bb44b4a8ebde35cb752babe3, type: 3}
+  - {fileID: 21300000, guid: dacea4209070b4354800042a4cf25065, type: 3}
+  - {fileID: 21300000, guid: 80fd26714ef5f495fb69aff7519aa575, type: 3}
+  - {fileID: 21300000, guid: 6031e6b5af4134946b23feec5b2f16fe, type: 3}
+  - {fileID: 21300000, guid: 0c1a8cc0bd9d848dbb86f849295f2c34, type: 3}
+  - {fileID: 21300000, guid: 1acfce875730f44ee90938f82174ab38, type: 3}
+  progressBar: {fileID: 0}
 --- !u!114 &1917280692
 MonoBehaviour:
   m_ObjectHideFlags: 0
