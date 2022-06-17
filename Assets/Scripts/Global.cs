@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-class Global {
+public class Global {
 
     // global variables (ALL CAPS PLEASE
 
@@ -10,7 +10,7 @@ class Global {
     // scenes
     public enum SCENES {
         MAINMENU,
-        GAME,
+        PLAY,
         GAMEOVER,
     }
 
