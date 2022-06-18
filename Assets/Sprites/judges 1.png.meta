@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 060958cc99a094b5bb147044f6520158
+guid: 0c67d4f9e87744aadafeaa7a6db55776
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: judgesBad
+      name: judgeBad
       rect:
         serializedVersion: 2
         x: 285
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5563bd51584a2466bb315b17afbdff2f
-      internalID: 1109172361
+      spriteID: 54e6f3f4b6f69400e85128939c020c17
+      internalID: -456232907
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: judgesGood
+      name: judgeGood
       rect:
         serializedVersion: 2
         x: 234
@@ -139,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d08de294a937e4edfbb30cdea59dbf6b
-      internalID: -1212445614
+      spriteID: edfb0317295e84b7ebd2582fcf24856e
+      internalID: 733664974
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: judgesNeutral
+      name: judgeNeutral
       rect:
         serializedVersion: 2
         x: 266
@@ -160,8 +160,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b19f56440a1a469695bb2c35c578a45
-      internalID: 1636100308
+      spriteID: 64279f45593db4a71981a00e47c61f8e
+      internalID: -995307902
       vertices: []
       indices: 
       edges: []
@@ -177,11 +177,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      judgesNeutral: 1636100308
-      judges_3: 1496594534
-      judges_2: -940464
-      judgesGood: -1212445614
-      judgesBad: 1109172361
+      judgeBad: -456232907
+      judges 1_3: -868621735
+      judgeGood: 733664974
+      judges 1_2: 1169745390
+      judgeNeutral: -995307902
+      judges 1_0: 822412920
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

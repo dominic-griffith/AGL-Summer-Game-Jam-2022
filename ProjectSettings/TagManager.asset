@@ -59,3 +59,15 @@ TagManager:
   - name: Progress Bar
     uniqueID: 290517015
     locked: 0
+  - name: Judge
+    uniqueID: 2552350003
+    locked: 0
+  - name: ScoreBoard
+    uniqueID: 3696025257
+    locked: 0
+  - name: Score
+    uniqueID: 72155231
+    locked: 0
+  - name: 'Desk '
+    uniqueID: 3122292219
+    locked: 0

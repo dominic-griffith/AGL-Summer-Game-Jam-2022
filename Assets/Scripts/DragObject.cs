@@ -35,11 +35,18 @@ public class DragObject : MonoBehaviour
     Rigidbody2D rb;
     public Material glowMat;
     private Material orgMat;
+    private bool canDrag;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         orgMat = gameObject.GetComponent<SpriteRenderer>().material;
+        
+    }
+
+    private void Update()
+    {
+        canDrag = gameObject.GetComponentInParent<Draggability>().draggable;
     }
 
     private void OnMouseEnter()
@@ -54,11 +61,15 @@ public class DragObject : MonoBehaviour
 
     private void OnMouseDrag()
     {
-        Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z + transform.position.z);
-        Vector3 objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
-        transform.position = objPosition;
-        rb.isKinematic = true;
+        if(canDrag)
+        {
+            Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z + transform.position.z);
+            Vector3 objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
+            transform.position = objPosition;
+            rb.isKinematic = true;
+        }
     }
+        
 
     private void OnMouseUp()
     {

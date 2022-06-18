@@ -10,6 +10,7 @@ public class WallMovement : MonoBehaviour // the instantiation of a wall
     public GameObject progressBar;
     public float initDist;
     public EndGame endGame;
+    private bool gameEnded = false;
 
     // Start is called before the first frame update
     void Start()
@@ -25,9 +26,14 @@ public class WallMovement : MonoBehaviour // the instantiation of a wall
         if (distance > 0f) {
            transform.Translate(0, 0, -speed * Time.deltaTime);
         }
-        else
+        else if (!gameEnded)
         {
             endGame.endLevel();
+            gameEnded = true;
+        }
+        else
+        {
+
         }
 
         ProgressBar pb = progressBar.GetComponent(typeof(ProgressBar)) as ProgressBar;
@@ -35,16 +41,16 @@ public class WallMovement : MonoBehaviour // the instantiation of a wall
 
     }
 
-    void OnTriggerEnter2D(Collider2D col) {
-        //if (col.gameObject.name == "Player") {
+    //void OnTriggerEnter2D(Collider2D col) {
+    //    //if (col.gameObject.name == "Player") {
 
 
-        //    //SceneManager.LoadScene(Global.SCENES.GAMEOVER.ToString());
+    //    //    //SceneManager.LoadScene(Global.SCENES.GAMEOVER.ToString());
 
-        //}
-        Debug.Log(col.transform.name);
+    //    //}
+    //    Debug.Log(col.transform.name);
 
-    }
+    //}
 
 
 

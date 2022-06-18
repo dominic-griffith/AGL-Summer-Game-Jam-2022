@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class WallCollision : MonoBehaviour
 {
+    [SerializeField] ScoringSystem score;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Here");
-        Debug.Log(collision.transform.name);
+        score.bodyParts.Add(collision.transform.name);
     }
 }
