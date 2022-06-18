@@ -10,9 +10,10 @@ public class ScoringSystem : MonoBehaviour
     [SerializeField] private TextMeshPro textBad;
 
     public List<string> bodyParts;
-    private int scoreGood = 0;
-    private int scoreNeutral = 0;
-    private int scoreBad = 0;
+    public int scoreGood = 0;
+    public int scoreNeutral = 0;
+    public int scoreBad = 0;
+    public int totScore;
 
     public void waitForScore()
     {
@@ -21,7 +22,7 @@ public class ScoringSystem : MonoBehaviour
 
     public void calculateScore()
     {
-        int totScore = 9 - bodyParts.Count;
+        totScore = 9 - bodyParts.Count;
         int tempPoints = totScore;
 
         if (tempPoints >= 3)

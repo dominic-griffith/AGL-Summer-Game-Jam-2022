@@ -18,6 +18,8 @@ public class EndGame : MonoBehaviour
 
     public void endLevel()
     {
+        FindObjectOfType<AudioManager>().Stop("Cheering");
+        FindObjectOfType<AudioManager>().Play("Drum Roll");
         cursor.SetActive(false);
         animCam.SetBool("PanCamera", true);
         wallImage.SetActive(false);
@@ -32,15 +34,31 @@ public class EndGame : MonoBehaviour
     private void LiftSignGood()
     {
         animGood.SetBool("LiftScore", true);
+        if (scoring.scoreGood < 7)
+        {
+            FindObjectOfType<AudioManager>().Play("Crowd Aw");
+        }
     }
 
     private void LiftSignNeutral()
     {
         animNeutral.SetBool("LiftScore", true);
+        if (scoring.scoreNeutral < 7)
+        {
+            FindObjectOfType<AudioManager>().Play("Crowd Aw");
+        }
     }
 
     private void LiftSignBad()
     {
         animBad.SetBool("LiftScore", true);
+        if(scoring.scoreBad < 7)
+        {
+            FindObjectOfType<AudioManager>().Play("Crowd Aw");
+        }
+        if(scoring.totScore == 9)
+        {
+            FindObjectOfType<AudioManager>().Play("Crowd Cheer");
+        }
     }
 }
