@@ -71,3 +71,6 @@ TagManager:
   - name: 'Desk '
     uniqueID: 3122292219
     locked: 0
+  - name: Cursor
+    uniqueID: 1911606163
+    locked: 0

@@ -13,10 +13,12 @@ public class EndGame : MonoBehaviour
     [SerializeField] private PolygonCollider2D polygonCollider2D;
     [SerializeField] private ScoringSystem scoring;
     [SerializeField] private GameObject player;
+    [SerializeField] private GameObject cursor;
 
 
     public void endLevel()
     {
+        cursor.SetActive(false);
         animCam.SetBool("PanCamera", true);
         wallImage.SetActive(false);
         player.GetComponent<Draggability>().MakeUndraggable();
