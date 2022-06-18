@@ -71,3 +71,6 @@ TagManager:
   - name: 'Desk '
     uniqueID: 3122292219
     locked: 0
+  - name: MenuBody
+    uniqueID: 3759765057
+    locked: 0

@@ -11,6 +11,8 @@ public class Global {
     public enum SCENES {
         MAINMENU,
         PLAY,
+        SETTINGS,
+        CREDITS,
         GAMEOVER,
     }
 

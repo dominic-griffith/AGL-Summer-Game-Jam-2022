@@ -5,13 +5,37 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField] private Animator canvas;
+
+
     public void PlayGame() {
-        SceneManager.LoadScene(Global.SCENES.PLAY.ToString());
+       canvas.SetBool("PanToPlay", true);
+    }
+
+    public void GoToSettings() {
+        canvas.SetBool("PanToSetting", true);
+    }
+
+    public void GoToCredits() {
+        canvas.SetBool("PanToCredits", true);
+    }
+
+
+    public void PlayToMain() {
+        canvas.SetBool("PanToPlay", false);
+    }
+
+    public void SettingsToMain() {
+       canvas.SetBool("PanToSetting", false);
+    }
+
+    public void CreditsToMain() {
+        canvas.SetBool("PanToCredits", false);
     }
 
     public void QuitGame() {
-        Debug.Log("QUIT!");
         Application.Quit();
     }
+
 }
 
