@@ -1,9 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ScoringSystem : MonoBehaviour
 {
+    [SerializeField] private TextMeshPro textGood;
+    [SerializeField] private TextMeshPro textNeutral;
+    [SerializeField] private TextMeshPro textBad;
+
     public List<string> bodyParts;
     private int scoreGood = 0;
     private int scoreNeutral = 0;
@@ -21,29 +26,28 @@ public class ScoringSystem : MonoBehaviour
 
         if (tempPoints >= 3)
         {
-            scoreGood = 3;
+            scoreGood = 3 * 3 + 1;
             tempPoints -= 3;
         }
         else
         {
-            scoreGood = tempPoints;
+            scoreGood = tempPoints * 3 + 1;
             tempPoints -= tempPoints;
         }
         if (tempPoints >= 3)
         {
-            scoreNeutral = 3;
+            scoreNeutral = 3 * 3 + 1;
             tempPoints -= 3;
         }
         else
         {
-            scoreNeutral = tempPoints;
+            scoreNeutral = tempPoints * 3 + 1;
             tempPoints -= tempPoints;
         }
-        scoreBad = tempPoints;
+        scoreBad = tempPoints * 3 + 1;
 
-        Debug.Log(totScore);
-        Debug.Log(scoreGood);
-        Debug.Log(scoreNeutral);
-        Debug.Log(scoreBad);
+        textGood.text = scoreGood.ToString();
+        textNeutral.text = scoreNeutral.ToString();
+        textBad.text = scoreBad.ToString();
     }
 }

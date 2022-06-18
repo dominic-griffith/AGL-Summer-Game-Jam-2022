@@ -3971,7 +3971,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1905507563}
   - component: {fileID: 1905507564}
-  - component: {fileID: 1905507565}
   m_Layer: 5
   m_Name: LevelMenu
   m_TagString: Untagged
@@ -4019,31 +4018,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecd3777b736fd6d4e9648e342d6cd330, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1905507565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1905507562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a617dd8e554d3f145ac6fd64c3fb9a24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numParts: 4
-  wallHolder: {fileID: 7789213632708740475, guid: 406fba2d826d27a4692a6f455b3fff5b, type: 3}
-  wall: {fileID: 0}
-  wallPrefabs:
-  - {fileID: 21300000, guid: 24862a76bb44b4a8ebde35cb752babe3, type: 3}
-  - {fileID: 21300000, guid: dacea4209070b4354800042a4cf25065, type: 3}
-  - {fileID: 21300000, guid: 80fd26714ef5f495fb69aff7519aa575, type: 3}
-  - {fileID: 21300000, guid: da1eefd876bd641f59238f4c4188ee45, type: 3}
-  - {fileID: 21300000, guid: 66e4cabbdef35486e812bdc6a17b289f, type: 3}
-  - {fileID: 21300000, guid: 6031e6b5af4134946b23feec5b2f16fe, type: 3}
-  - {fileID: 21300000, guid: 0c1a8cc0bd9d848dbb86f849295f2c34, type: 3}
-  - {fileID: 21300000, guid: 1acfce875730f44ee90938f82174ab38, type: 3}
-  progressBar: {fileID: 0}
 --- !u!1 &1947470654
 GameObject:
   m_ObjectHideFlags: 0
@@ -4097,7 +4071,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 1
+  orthographic: 0
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -4702,7 +4676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
