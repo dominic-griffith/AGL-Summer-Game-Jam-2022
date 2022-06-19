@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Body Parts
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 99147751
+    locked: 0
+  - name: Torso
+    uniqueID: 3581552551
+    locked: 0
+  - name: Head
+    uniqueID: 2793687029
+    locked: 0
+  - name: Arms and Legs
+    uniqueID: 2352927217
+    locked: 0
+  - name: Hands and Feet
+    uniqueID: 4046418829
+    locked: 0
+  - name: Progress Bar
+    uniqueID: 290517015
+    locked: 0
+  - name: Judge
+    uniqueID: 2552350003
+    locked: 0
+  - name: ScoreBoard
+    uniqueID: 3696025257
+    locked: 0
+  - name: Score
+    uniqueID: 72155231
+    locked: 0
+  - name: 'Desk '
+    uniqueID: 3122292219
+    locked: 0
+<<<<<<< HEAD
+  - name: MenuBody
+    uniqueID: 3759765057
+=======
+  - name: Cursor
+    uniqueID: 1911606163
+>>>>>>> dom
+    locked: 0

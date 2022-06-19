@@ -36,12 +36,13 @@ public class DragObject : MonoBehaviour
     public Material glowMat;
     private Material orgMat;
     private bool canDrag;
+    private SpriteRenderer rend;
+    [SerializeField] private cursorMovement cursor;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         orgMat = gameObject.GetComponent<SpriteRenderer>().material;
-        
     }
 
     private void Update()
@@ -51,11 +52,13 @@ public class DragObject : MonoBehaviour
 
     private void OnMouseEnter()
     {
+        cursor.dragOn();
         gameObject.GetComponent<SpriteRenderer>().material = glowMat;
     }
 
     private void OnMouseExit()
     {
+        cursor.dragOff();
         gameObject.GetComponent<SpriteRenderer>().material = orgMat;
     }
 
