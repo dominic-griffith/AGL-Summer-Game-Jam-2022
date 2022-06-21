@@ -4,17 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class CreativeButtons : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class ChangeCursor : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] private Texture2D cursorOpen;
     [SerializeField] private Texture2D cursorClose;
     private Vector2 cursorHotspot = new Vector2(16f, 16f);
 
-    private void Start()
-    {
-        this.GetComponent<Image>().alphaHitTestMinimumThreshold = 0.1f;
-    }
-    
     void IPointerEnterHandler.OnPointerEnter(PointerEventData pointerEventData)
     {
         Cursor.SetCursor(cursorClose, cursorHotspot, CursorMode.Auto);
