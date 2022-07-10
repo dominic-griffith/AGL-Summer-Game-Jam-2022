@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class StartCrowdCheer : MonoBehaviour
 {
-    private void Start()
+    public void Start()
     {
         FindObjectOfType<AudioManager>().Play("Cheering");
+    }
+    public void Stop()
+    {
+        FindObjectOfType<AudioManager>().Stop("Cheering");
     }
 }
