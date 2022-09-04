@@ -892,10 +892,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
-    - target: {fileID: 5115134549579475351, guid: f78cc2c191082481296753e10c5ecfd8, type: 3}
-      propertyPath: sounds.Array.data[3].volume
-      value: 0.1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f78cc2c191082481296753e10c5ecfd8, type: 3}
 --- !u!1 &406256131
@@ -1875,8 +1871,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1051316293}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: ChangeVolume
-        m_Mode: 1
+        m_MethodName: SetMasterVolume
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1897,7 +1893,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8084acb3678006449963ce1e3e28d2d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeSlider: {fileID: 1051316292}
+  audioMixer: {fileID: 24100000, guid: 58e9a17866b2948e095f8af08f1d13e7, type: 2}
 --- !u!1 &1135443703
 GameObject:
   m_ObjectHideFlags: 0

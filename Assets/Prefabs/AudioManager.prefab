@@ -69,7 +69,7 @@ MonoBehaviour:
   - name: Theme
     clip: {fileID: 8300000, guid: c67e0b7154f884a72bb69e8628b26b95, type: 3}
     startTime: 0
-    volume: 0.3
+    volume: 0.1
     pitch: 1
     loop: 1
     source: {fileID: 0}
@@ -94,3 +94,4 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  mainMixerGroup: {fileID: 24300002, guid: 58e9a17866b2948e095f8af08f1d13e7, type: 2}

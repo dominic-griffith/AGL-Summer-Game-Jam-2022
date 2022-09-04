@@ -1,18 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class SoundManager : MonoBehaviour
 {
 
-    [SerializeField] Slider volumeSlider;
-    private AudioManager audioM;
-    // Start is called before the first frame update
+    public AudioMixer audioMixer;
 
-    public void ChangeVolume() {
-        audioM = GameObject.Find("AudioManager").GetComponent<AudioManager>();
-        audioM.AdjustTheme("Theme", volumeSlider.value);
+    public void SetMasterVolume(float volume)
+    {
+        audioMixer.SetFloat("masterVolume", volume);
     }
 }
 
