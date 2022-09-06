@@ -11060,10 +11060,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1521675106}
-    - target: {fileID: 4464934501454038766, guid: 723101a6713074f5c910f7ee73c44cb2, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: playButtonSound
-      objectReference: {fileID: 0}
     - target: {fileID: 4464934501474440792, guid: 723101a6713074f5c910f7ee73c44cb2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

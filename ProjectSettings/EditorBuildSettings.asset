@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Final Build Scenes/MainMenu.unity
-    guid: 79a9f62fd6d774f97a3a0eade61c3102
+    path: Assets/Scenes/Final Build Scenes/IntroCutscene.unity
+    guid: b7d8321376d0142d29431a4005ac58e8
   - enabled: 1
     path: Assets/Scenes/Final Build Scenes/Levels/Play 1.unity
     guid: ce25747b2920a474eacd43de887708bb
@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Final Build Scenes/Levels/Play 6.unity
     guid: c14ad6b7d51f94ef48fa96346a19b9e9
+  - enabled: 1
+    path: Assets/Scenes/Final Build Scenes/MainMenu.unity
+    guid: 79a9f62fd6d774f97a3a0eade61c3102
   m_configObjects: {}
