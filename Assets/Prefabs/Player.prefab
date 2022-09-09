@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowMat: {fileID: 2100000, guid: 4ea255509a2944950aa0e164fb41928c, type: 2}
-  cursorTexture: {fileID: 2800000, guid: 0cdf877f4945a49f0bad7cc3a41b1337, type: 3}
+  cursor: {fileID: 0}
 --- !u!114 &5534413227885576252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -394,7 +394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowMat: {fileID: 2100000, guid: 4ea255509a2944950aa0e164fb41928c, type: 2}
-  cursorTexture: {fileID: 2800000, guid: 0cdf877f4945a49f0bad7cc3a41b1337, type: 3}
+  cursor: {fileID: 0}
 --- !u!114 &5534413228230789498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -474,7 +474,7 @@ GameObject:
   - component: {fileID: 8386895563040017531}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -664,7 +664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowMat: {fileID: 2100000, guid: 4ea255509a2944950aa0e164fb41928c, type: 2}
-  cursorTexture: {fileID: 2800000, guid: 0cdf877f4945a49f0bad7cc3a41b1337, type: 3}
+  cursor: {fileID: 0}
 --- !u!114 &5534413228543947360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -899,7 +899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowMat: {fileID: 2100000, guid: 4ea255509a2944950aa0e164fb41928c, type: 2}
-  cursorTexture: {fileID: 2800000, guid: 0cdf877f4945a49f0bad7cc3a41b1337, type: 3}
+  cursor: {fileID: 0}
 --- !u!114 &5534413228820673245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1113,7 +1113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowMat: {fileID: 2100000, guid: 4ea255509a2944950aa0e164fb41928c, type: 2}
-  cursorTexture: {fileID: 2800000, guid: 0cdf877f4945a49f0bad7cc3a41b1337, type: 3}
+  cursor: {fileID: 0}
 --- !u!114 &5534413228863539605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1409,7 +1409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowMat: {fileID: 2100000, guid: 4ea255509a2944950aa0e164fb41928c, type: 2}
-  cursorTexture: {fileID: 2800000, guid: 0cdf877f4945a49f0bad7cc3a41b1337, type: 3}
+  cursor: {fileID: 0}
 --- !u!114 &5534413228904084033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1633,7 +1633,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowMat: {fileID: 2100000, guid: 4ea255509a2944950aa0e164fb41928c, type: 2}
-  cursorTexture: {fileID: 2800000, guid: 0cdf877f4945a49f0bad7cc3a41b1337, type: 3}
+  cursor: {fileID: 0}
 --- !u!114 &5534413228941208781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1921,7 +1921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowMat: {fileID: 2100000, guid: 4ea255509a2944950aa0e164fb41928c, type: 2}
-  cursorTexture: {fileID: 2800000, guid: 0cdf877f4945a49f0bad7cc3a41b1337, type: 3}
+  cursor: {fileID: 0}
 --- !u!114 &5534413229266780220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2133,7 +2133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowMat: {fileID: 2100000, guid: 4ea255509a2944950aa0e164fb41928c, type: 2}
-  cursorTexture: {fileID: 2800000, guid: 0cdf877f4945a49f0bad7cc3a41b1337, type: 3}
+  cursor: {fileID: 0}
 --- !u!114 &5534413229479092318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2347,7 +2347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowMat: {fileID: 2100000, guid: 4ea255509a2944950aa0e164fb41928c, type: 2}
-  cursorTexture: {fileID: 2800000, guid: 0cdf877f4945a49f0bad7cc3a41b1337, type: 3}
+  cursor: {fileID: 0}
 --- !u!114 &5534413229548077732
 MonoBehaviour:
   m_ObjectHideFlags: 0
